@@ -1,0 +1,45 @@
+/*
+    * Smart Contract can hold funds like wallet
+    * payable means this function can accept native tokens ( ether, wei, gwei )
+
+    * What is reverting ?
+        => undo any action before and send remaining gas back.
+        => require(convertedAmount >= minimumUsd, "balance not enough"); 
+    
+    * chainlink datafeeds are the decentralized way of getting real world data
+    * what is modifier ?
+        => Modifier is the keyword that we can put with the function declaration (like public, payable, view etc)
+           which defines the function
+    * constant and immutable keywords are used to make reading and deploying gas efficient. also we can't reassign those
+      variables. Instead of storing those variable in the storage slot, it's stored directly in the byte code of the 
+      contract.
+    
+    * How can we save gases?
+        => using constant and immutable keyword when needed
+        => using customized error handlers
+
+    *
+        Ether is sent to contract
+          is msg data empty
+             /    \
+            yes   no
+            /       \
+        receive()?  fallback()
+         /    \ 
+       yes    no
+       /       \  
+    receive()  fallback()
+
+
+
+*/
+
+1. What is Mocking? : https://stackoverflow.com/questions/2665812/what-is-mocking
+2. Tests
+    i. unit test : this is done locally
+        a. hardhat
+        b. forked-hardhat
+    ii. staging test: this is done in a testnet.
+
+3. Gas Optimization : 
+    
