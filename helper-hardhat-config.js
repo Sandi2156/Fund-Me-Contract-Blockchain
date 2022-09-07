@@ -9,7 +9,7 @@ const networkConfig = {
 	},
 };
 
-const testChains = ['hardhat', 'localhost'];
+const testChains = ['hardhat', 'localhost', 'localNode'];
 const decimals = 8;
 const initial_answer = 100000000000;
 
